@@ -1,0 +1,22 @@
+﻿@model MoviesWebUI.Models.Movie
+
+@{
+    ViewData["Title"] = "Movie Details";
+}
+
+<h1>Movie Details</h1>
+
+<div>
+    <h4>@Model.Title</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">Genre</dt>
+        <dd class="col-sm-10">@Model.Genre</dd>
+
+        <dt class="col-sm-2">Year</dt>
+        <dd class="col-sm-10">@Model.Year</dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
